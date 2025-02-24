@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-powered personalized learning path generator that creates customized learning journeys based on your goals, preferences, and learning style">
+    <meta name="keywords" content="learning path, AI learning, personalized learning, education, skill development, online learning">
+    <meta property="og:title" content="AI Learning Path Generator">
+    <meta property="og:description" content="Create your personalized learning journey with AI">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI Learning Path Generator">
+    <meta name="twitter:description" content="Create your personalized learning journey with AI">
+    <title>AI Learning Path Generator</title>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/onboarding.css" rel="stylesheet">
+    <link href="styles/dashboard.css" rel="stylesheet">
+    <link href="styles/animations.css" rel="stylesheet">
+    <script>
+        // Initialize theme from local storage
+        if (localStorage.getItem('darkMode') === 'true') {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="utils/learningPathGenerator.js"></script>
+    <script type="text/babel" src="utils/resourceDiscovery.js"></script>
+    <script type="text/babel" src="utils/userProfile.js"></script>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="components/ResourceCard.js"></script>
+    <script type="text/babel" src="components/dashboard/DashboardSettings.js"></script>
+    <script type="text/babel" src="components/dashboard/ProgressVisualization.js"></script>
+    <script type="text/babel" src="components/dashboard/MotivationalMessage.js"></script>
+    <script type="text/babel" src="components/dashboard/ProgressTracker.js"></script>
+    <script type="text/babel" src="components/dashboard/ResourceCard.js"></script>
+    <script type="text/babel" src="components/dashboard/LearningPath.js"></script>
+    <script type="text/babel" src="components/dashboard/AiTutor.js"></script>
+    <script type="text/babel" src="components/dashboard/LearningStreak.js"></script>
+    <script type="text/babel" src="components/dashboard/ResourceLibrary.js"></script>
+    <script type="text/babel" src="components/onboarding/SkillSelection.js"></script>
+    <script type="text/babel" src="components/onboarding/GoalDefinition.js"></script>
+    <script type="text/babel" src="components/onboarding/PriorKnowledge.js"></script>
+    <script type="text/babel" src="components/onboarding/LearningStyle.js"></script>
+    <script type="text/babel" src="components/onboarding/TimeCommitment.js"></script>
+    <script type="text/babel" src="components/onboarding/ResourcePreference.js"></script>
+    <script type="text/babel" src="pages/Onboarding.js"></script>
+    <script type="text/babel" src="pages/Dashboard.js"></script>
+    <script type="text/babel" src="app.js"></script>
+    <script type="text/babel" src="components/dashboard/ResourceDiscovery.js"></script>
+</body>
+</html>
